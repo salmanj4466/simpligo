@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <!-- Favicon -->
+   <!-- <link rel="icon" href="assets/images/favicon.png" type="image/ico" /> -->
+   <!-- Google fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+   <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+   <title>Simpligo</title>
+</head>
+<body>
+   <div id="preloader">
+      <img src="assets/images/loader.gif" alt="loader">
+   </div>
+   <section class="form-box">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <a href="index.html" class="backward-arrow"> <i class="fa fa-arrow-right"></i> חזור  </a>
+               <a href="index.html">
+                  <img class="logo" src="assets/images/logo.png" alt="logo">
+               </a>
+            </div>
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-12 col-xl-10 form-wizard">
+               <!-- Form Wizard -->
+               <form role="form" action="" method="post">
+                  <!-- Form progress -->
+                  <ul class="form-wizard-steps form-wizard-tolal-steps-4">
+                     <!-- Step 1 -->
+                     <li class="form-wizard-step active">
+                        <img class="number-count" src="assets/images/numbers/one-pink.png" alt="one">
+                        <img class="check-mark" src="assets/images/check-mark.png" alt="check-mark">
+                        <p> פרטים אישיים   </p>
+                     </li>
+                     <!-- Step 2 -->
+                     <li class="form-wizard-step">
+                        <img class="number-count number-gray" src="assets/images/numbers/two-gray.png" alt="two">
+                        <img class="number-count number-pink" src="assets/images/numbers/two-pink.png" alt="two">
+                        <img class="check-mark" src="assets/images/check-mark.png" alt="check-mark">
+                        <p> פרטי הנכס   </p>
+                     </li>
+                     <!-- Step 3 -->
+                     <li class="form-wizard-step">
+                        <img class="number-count number-gray" src="assets/images/numbers/three-gray.png" alt="three">
+                        <img class="number-count number-pink" src="assets/images/numbers/three-pink.png" alt="three">
+                        <img class="check-mark" src="assets/images/check-mark.png" alt="check-mark">
+                        <p>בדיקת זכאות  </p>
+                     </li>
+                     <!-- Step 4 -->
+                     <li class="form-wizard-step">
+                        <img class="number-count" src="assets/images/numbers/four-gray.png" alt="four">
+                        <p>קבלת ערבות  </p>
+                     </li>
+                     <!-- Step 4 -->
+                  </ul>
+                  <!-- Form Step 1 -->
+                  <fieldset>
+                     <h2>זיהוי ואימות  </h2>
+                     <h5>כדי לבדוק את זכאותך לקבלת הערבות אנחנו צריכים מספר פרטים מזהים  </h5>
+                     <div class="form-row">
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="number">ספר זהות  </label>
+                              <input type="text" class="form-control required" id="number"/>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="birth">תאריך לידה  </label>
+                              <input type="text" class="form-control required" id="birth"/>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="up-in-toggle form-group">
+                              <input type="radio" id="switch_right" name="switch_2" value="no" checked/>
+                              <label for="switch_right">אני זכר  </label>
+                              <input type="radio" id="switch_left" name="switch_2" value="yes" />
+                              <label for="switch_left">אני נקבה </label>
+                           </div>
+                        </div>
+                     </div>
+                     <h6>נא מלאו את כתובתכם הנוכחית: </h6>
+                     <div class="form-row">
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="select-city">עיר  </label>
+                              <select type="text" class="form-control" id="select-city">
+                                 <option>עיר   </option>
+                                 <option>Option 1</option>
+                                 <option>Option 2</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="select-street">רחוב </label>
+                              <select type="text" class="form-control" id="select-street">
+                                 <option>רחוב </option>
+                                 <option>Option 1</option>
+                                 <option>Option 2</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-row">
+                              <div class="col-6">
+                                 <div class="form-group floating-input">
+                                    <label class="control-label" for="b-number">מספר בניין  </label>
+                                    <input type="text" class="form-control required" id="b-number"/>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group floating-input">
+                                    <label class="control-label" for="apr-number"> מספר דירה   </label>
+                                    <input type="text" class="form-control required" id="apr-number"/>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="wrap">
+                        <div class="file">
+                           <div class="file__input" id="file__input">
+                              <input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]"/>
+                              <label class="file__input--label" for="customFile" data-text-btn="Upload"> צירוף 2 תעודות מזהות (תעודת זהות, דרכון או רישיון נהיגה)  <br /> 
+                                 ניתן לגרור את הקבצים לתוך התיבה או באמצעות כפתור העלאת קובץ
+                              </label>
+                              <img class="info-icon" src="assets/images/info.png" alt="info">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-wizard-buttons">
+                        <button type="button" class="btn btn-primary btn-next"> המשך למילוי פרטי הנכס
+                        </button>
+                     </div>
+                  </fieldset>
+                  <!-- Form Step 2 -->
+                  <fieldset>
+                     <h2> פרטי הנכס  </h2>
+                     <h5 class="mb-4">עכשיו כשהכרנו, נרצה לדעת כמה פרטים על הדירה או הבית...</h5>
+                     <h6> אנא הזינו את כתובת הנכס: </h6>
+                     <div class="form-row">
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="city">עיר   </label>
+                              <input type="text" class="form-control required" id="city">
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="street">ע רחוב  </label>
+                              <input type="text" class="form-control required" id="street">
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-row">
+                              <div class="col-6">
+                                 <div class="form-group floating-input">
+                                    <label class="control-label" for="building-number"> מספר בניין  </label>
+                                    <input type="text" class="form-control required" id="building-number">
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group floating-input">
+                                    <label class="control-label" for="apart-number"> מספר דירה   </label>
+                                    <input type="text" class="form-control required" id="apart-number">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-wizard-buttons mt-2">
+                        <button type="button" class="btn btn-primary btn-next">המשך  </button>
+                     </div>
+                     <p class="bottom-link"><a href="javascript:void(0)">עדיין אין לי חוזה, אני רק רוצה לבדוק זכאות לקבלת לערבות  </a></p>
+                  </fieldset>
+                  <!-- Form Step 3 -->
+                  <fieldset class="step-3">
+                     <h2> פרטי בעל הנכס  </h2>
+                     <h5>אנא הזינו את פרטי בעל הנכס וצרפו את חוזה השכירות  </h5>
+                     <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="property-owner">שם בעל הנכס   </label>
+                              <input type="text" class="form-control" id="property-owner"/>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-group floating-input">
+                              <label class="control-label" for="property-id">מספר זהות בעל הנכס  </label>
+                              <input type="text" class="form-control" id="property-id"/>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row justify-content-center">
+                        <div class="col-md-8">
+                           <div class="wrap">
+                              <div class="file">
+                                 <div class="file__input" id="file__input">
+                                    <input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]"/>
+                                    <label class="file__input--label" for="customFile" data-text-btn="Upload"> נא צרפו חוזה שכירות   <br />
+                                       ניתן לגרור את הקובץ לתוך התיבה  <br />
+                                       או באמצעות כפתור העלאת קובץ
+                                    </label>
+                                    <img class="info-icon" src="assets/images/info.png" alt="info">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-wizard-buttons mt-2">
+                        <button type="button" class="btn btn-primary btn-next">המשך  </button>
+                     </div>
+                     <p class="bottom-link">
+                        <a href="javascript:void(0)"> עדיין אין לי חוזה, אני רק רוצה לבדוק זכאות לקבלת לערבות  </a>
+                     </p>
+                  </fieldset>
+                  <!-- Form Step 4 -->
+                  <fieldset>
+                     <h2>בדיקת הזכאות לערבות  </h2>
+                     <h5>קבלת ערבות Simpligo מבוססת על אלגוריתם חכם שמעריך את רמת הסיכון  <br />ויכולת ההחזר בהתאם לנתונים שהתקבלו, בעוד כמה רגעים תתקבל תשובה  </h5>
+                     <img class="pb-5 mb-5 mt-4" src="assets/images/loading.png" alt="loading">
+                  </fieldset>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--  footer -->
+   <footer>
+      <div class="container">
+         <div class="row text-center">
+            <div class="col-md-12">
+               <img class="wow fadeInUp" data-wow-delay="0.3s" width="20" src="assets/images/lock.svg" alt="lock">
+               <p class="wow fadeInUp mt-1 pb-3" data-wow-delay="0.5s"> הנתונים שהנכם מוסרים בדף זה מוגנים    <br />
+                  ומאובטחים על ידי תקן SSL TLS 1.2
+               </p>
+               <a href="javascript:void(0)" class="wow fadeInUp" data-wow-delay="1s"><img width="106" src="assets/images/logo.png" alt="logo"> </a>
+               <p class="mt-3 mb-2 wow fadeInUp" data-wow-delay="1.2s">ערבות Simpligo ניתנת בכפוף לרישיון למתן אשראי ממשרד האוצר ומפוקחת על ידי רשות שוק ההון הביטוח והחיסכון.</p>
+               <p class="copy-right text-center wow fadeInUp" data-wow-delay="1.2s"> <a href="javascript:void(0)" class="d-none d-md-inline-block"> <img class="ml-2" src="assets/images/copy-right.png" alt="right"> </a> .Simpligo. All rights reserved 2021 <a href="javascript:void(0)" class="d-md-none"> <img class="m-auto pt-3" src="assets/images/copy-right.png" alt="right"> </a> 
+               </p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+   <script src="assets/js/custom.js"></script>
+   <script>
+      "use strict";
+      function scroll_to_class(element_class, removed_height) {
+         var scroll_to = $(element_class).offset().top - removed_height;
+         if($(window).scrollTop() != scroll_to) {
+            $('.form-wizard').stop().animate({scrollTop: scroll_to}, 0);
+         }
+      }
+
+      function bar_progress(progress_line_object, direction) {
+         var number_of_steps = progress_line_object.data('number-of-steps');
+         var now_value = progress_line_object.data('now-value');
+         var new_value = 0;
+         if(direction == 'right') {
+            new_value = now_value + ( 100 / number_of_steps );
+         }
+         else if(direction == 'left') {
+            new_value = now_value - ( 100 / number_of_steps );
+         }
+         progress_line_object.attr('style', 'width: ' + new_value + '%;').data('now-value', new_value);
+      }
+
+      jQuery(document).ready(function() {
+
+                     /*
+                     Form
+                     */
+                     $('.form-wizard fieldset:first').fadeIn('slow');
+                     
+                     $('.form-wizard .required').on('focus', function() {
+                        $(this).removeClass('input-error');
+                     });
+                     
+                     // next step
+                     $('.form-wizard .btn-next').on('click', function() {
+                        var parent_fieldset = $(this).parents('fieldset');
+                        var next_step = true;
+                     // navigation steps / progress steps
+                     var current_active_step = $(this).parents('.form-wizard').find('.form-wizard-step.active');
+                     var progress_line = $(this).parents('.form-wizard').find('.form-wizard-progress-line');
+                     
+                     // fields validation
+                     parent_fieldset.find('.required').each(function() {
+                        if( $(this).val() == "" ) {
+                           $(this).addClass('input-error');
+                           next_step = false;
+                        }
+                        else {
+                           $(this).removeClass('input-error');
+                        }
+                     });
+                     // fields validation
+                     
+                     if( next_step ) {
+                        parent_fieldset.fadeOut(400, function() {
+                        // change icons
+                        current_active_step.removeClass('active').addClass('activated').next().addClass('active');
+                        // progress bar
+                        bar_progress(progress_line, 'right');
+                        // show next step
+                        $(this).next().fadeIn();
+                        // scroll window to beginning of the form
+                        scroll_to_class( $('.form-wizard'), 20 );
+                     });
+                     }
+                     
+                  });
+                     
+                     // previous step
+                     $('.form-wizard .btn-previous').on('click', function() {
+                     // navigation steps / progress steps
+                     var current_active_step = $(this).parents('.form-wizard').find('.form-wizard-step.active');
+                     var progress_line = $(this).parents('.form-wizard').find('.form-wizard-progress-line');
+                     
+                     $(this).parents('fieldset').fadeOut(400, function() {
+                     // change icons
+                     current_active_step.removeClass('active').prev().removeClass('activated').addClass('active');
+                     // progress bar
+                     bar_progress(progress_line, 'left');
+                     // show previous step
+                     $(this).prev().fadeIn();
+                     // scroll window to beginning of the form
+                     scroll_to_class( $('.form-wizard'), 20 );
+                  });
+                  });
+                     
+                     // submit
+                     $('.form-wizard').on('submit', function(e) {
+
+                     // fields validation
+                     $(this).find('.required').each(function() {
+                        if( $(this).val() == "" ) {
+                           e.preventDefault();
+                           $(this).addClass('input-error');
+                        }
+                        else {
+                           $(this).removeClass('input-error');
+                        }
+                     });
+                     // fields validation
+                     
+                  });
+                     
+                     
+                  });
+
+
+      $(document).ready(function() {
+
+                     // ------------  File upload BEGIN ------------
+                     $('.file__input--file').on('change',function(event){
+                        var files = event.target.files;
+                        for (var i = 0; i < files.length; i++) {
+                           var file = files[i];
+                           $("<div class='file__value'><div class='file__value--text'><img class='ml-2' src='assets/images/image.png'>" + file.name + "</div><div class='file__value--remove' data-id='" + file.name + "' ></div></div>").insertAfter('#file__input');
+                        }  
+                     });
+                     
+                     //Click to remove item
+                     $('body').on('click', '.file__value', function() {
+                        $(this).remove();
+                     });
+                     // ------------ File upload END ------------ 
+                     
+                  });   
+
+      /* First option in SELECT tag need to be BLANK */
+               /*$('.form-control').on('focus blur', function (e) {
+                 $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+              }).trigger('blur');*/
+
+              /* First option in SELECT tag don't need to be BLANK */
+              $('.form-control').on('focus blur change', function (e) {
+               var $currEl = $(this);
+               
+               if($currEl.is('select')) {
+                  if($currEl.val() === $("option:first", $currEl).val()) {
+                     $('.control-label', $currEl.parent()).animate({opacity: 0}, 240);
+                     $currEl.parent().removeClass('focused');
+                  } else {
+                     $('.control-label', $currEl.parent()).css({opacity: 1});
+                     $currEl.parents('.form-group').toggleClass('focused', ((e.type === 'focus' || this.value.length > 0) && ($currEl.val() !== $("option:first", $currEl).val())));
+                  }
+               } else {
+                  $currEl.parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+               }
+            }).trigger('blur');
+
+
+                  // Preloader
+                  (function ($) {
+                   'use strict';
+
+                   $(window).on('load', function () {
+                    $('#preloader')
+                    .delay(1200)
+                    .fadeOut('slow', function () {
+                      $(this).remove();
+                   });
+                 });
+                })(window.jQuery);
+
+
+             </script>
+          </body>
+          </html>
